@@ -1,0 +1,6 @@
+{
+    "/home/*": {
+        "target": "https://localhost:44396",
+        "secure": true
+    }
+}

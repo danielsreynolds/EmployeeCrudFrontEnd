@@ -1,0 +1,28 @@
+<div>
+    <table>
+        <tr>
+            <th>Employee Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>{{ Employee.EmployeeId }}</td>
+            <td>
+                <input type="text" [(ngModel)]="Employee.FirstName">    
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="Employee.LastName">
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="Employee.EmailAddress">
+            </td>
+            <td data-id="{{ Employee.EmployeeId }}">
+                <input type="submit" value="Submit Changes" (click)="editEmployee()">
+                <input type="submit" value="Cancel" (click)="goBack()">
+            </td>
+        </tr>
+    </table>
+
+</div>

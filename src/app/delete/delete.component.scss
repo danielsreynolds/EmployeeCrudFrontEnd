@@ -1,0 +1,28 @@
+$primary: rgb(111, 0, 255);
+$secondary: #7d7c84;
+$info: #2d93ad;
+$green: #88ab75;
+$yellow: #dbd56e;
+$danger: red;
+
+input[type="submit"] {
+  margin: 0 .5rem;
+  background-color: darken($danger, 15%);
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($danger, 25%);
+  }
+}
+
+input[type="submit"]:nth-of-type(2) {
+    background-color: $secondary;
+
+    &:hover {
+        background-color: darken($secondary, 25%);
+    }
+}

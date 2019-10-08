@@ -1,0 +1,7 @@
+<div class="container">
+    <p>Are you sure that you want to delete <strong>{{ Employee.FirstName }} {{ Employee.LastName }}?</strong></p>
+    <p>This action cannot be undone!</p>
+    <input type="submit" value="Yes, Delete" (click)="deleteEmployee()"> 
+    <input type="submit" value="No, Go Back" (click)="goBack()">
+    
+</div>

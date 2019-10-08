@@ -1,0 +1,19 @@
+<div class="container">
+    <!-- <form action="https://localhost:44396/api/values" method="POST"> -->
+    <form>
+        <label for="employee-id">Employee Id</label>
+        <input type="text" id="employee-id" name="EmployeeId" [(ngModel)]="NewEmployee.EmployeeId">
+
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="FirstName" [(ngModel)]="NewEmployee.FirstName">
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="LastName" [(ngModel)]="NewEmployee.LastName">
+
+        <label for="email-address">Email Address</label>
+        <input type="email" id="email-address" name="EmailAddress" [(ngModel)]="NewEmployee.EmailAddress">
+
+        <input type="submit" (click)="submitEmployee()">
+    </form>
+
+</div>

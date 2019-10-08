@@ -1,0 +1,23 @@
+<div>
+    <table>
+        <tr>
+            <th (click)="sortById()">Employee Id</th>
+            <th (click)="sortByFirstName()">First Name</th>
+            <th (click)="sortByLastName()">Last Name</th>
+            <th>Email Address</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let employee of employees">
+            <td>{{ employee.EmployeeId }}</td>
+            <td>{{ employee.FirstName }}</td>
+            <td>{{ employee.LastName }}</td>
+            <td>{{ employee.EmailAddress }}</td>
+            <td>
+                <a [routerLink]="['/edit', employee.EmployeeId]">Update</a> | 
+                <a [routerLink]="['/delete', employee.EmployeeId]">Delete</a>
+            </td>
+        </tr>
+    </table>
+
+</div>
+

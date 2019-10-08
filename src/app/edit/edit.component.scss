@@ -1,0 +1,45 @@
+$primary: rgb(111, 0, 255);
+$secondary: #7d7c84;
+$info: #2d93ad;
+$green: #88ab75;
+$yellow: #dbd56e;
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 3rem;
+}
+
+th {
+  background-color: darken(rgb(111, 0, 255), 15%);
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+}
+
+input[type="submit"] {
+  margin: 0 .5rem;
+  background-color: $primary;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:nth-of-type(2) {
+    background-color: $secondary;
+}
+
+input[type="submit"]:hover {
+  background-color: darken($primary, 25%);
+}
